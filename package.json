@@ -1,0 +1,53 @@
+{
+  "name": "gc-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "nuxt typecheck",
+    "amplify:sandbox": "npx ampx sandbox"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.4.0",
+    "@pinia/nuxt": "^0.11.3",
+    "aws-amplify": "^6.16.0",
+    "nuxt": "^4.3.0",
+    "pinia": "^3.0.4",
+    "tailwindcss": "^4.1.18",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.20.0",
+    "@aws-amplify/backend-cli": "^1.8.2",
+    "@iconify-json/lucide": "^1.2.87",
+    "@iconify-json/simple-icons": "^1.2.69",
+    "@nuxt/eslint": "^1.13.0",
+    "@nuxt/test-utils": "^3.23.0",
+    "@playwright/test": "^1.58.1",
+    "@vue/test-utils": "^2.4.6",
+    "aws-cdk-lib": "^2.236.0",
+    "constructs": "^10.4.5",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "happy-dom": "^20.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.0",
+    "vue-tsc": "^3.2.4"
+  }
+}

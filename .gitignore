@@ -1,0 +1,62 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nuxtrc
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editors
+.fleet
+.idea
+*.swp
+*.swo
+*~
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# AWS Amplify
+amplify_outputs.json
+amplify_outputs.ts
+.amplify/
+amplifyconfiguration.json
+
+# Testing
+test-results/
+playwright-report/
+coverage/
+blob-report/
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Claude Code
+.claude/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+vite.config.ts.timestamp-*
+vite.config.mts.timestamp-*
