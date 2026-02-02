@@ -13,24 +13,13 @@
 
       <UButton type="submit" block :loading="isLoading">Sign In</UButton>
     </UForm>
-
-    <USeparator label="or" class="my-6" />
-
-    <UButton
-      block
-      variant="outline"
-      icon="i-simple-icons-google"
-      @click="loginWithGoogle"
-    >
-      Continue with Google
-    </UButton>
   </div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({ layout: 'auth' });
 
-const { login, loginWithProvider, isLoading } = useAuth();
+const { login, isLoading } = useAuth();
 
 const formState = reactive({
   email: '',
@@ -39,9 +28,5 @@ const formState = reactive({
 
 async function handleLogin() {
   await login({ email: formState.email, password: formState.password });
-}
-
-async function loginWithGoogle() {
-  await loginWithProvider('google');
 }
 </script>

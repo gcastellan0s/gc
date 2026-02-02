@@ -9,7 +9,7 @@ Base template for building full-stack applications with Nuxt 4 and AWS Amplify G
 | Framework | Nuxt 4, Vue 3, TypeScript |
 | UI | Nuxt UI v4, Tailwind CSS v4 |
 | State | Pinia |
-| Auth | Amazon Cognito (Email + Google) |
+| Auth | Amazon Cognito (Email + Password) |
 | API | AWS AppSync (GraphQL), Nuxt Nitro (REST) |
 | Database | Amazon DynamoDB |
 | Storage | Amazon S3 |

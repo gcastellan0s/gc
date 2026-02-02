@@ -15,14 +15,6 @@ export default defineNuxtPlugin({
             identityPoolId: config.public.cognitoIdentityPoolId,
             loginWith: {
               email: true,
-              oauth: {
-                domain: '',
-                scopes: ['email', 'profile', 'openid'],
-                redirectSignIn: ['http://localhost:3000'],
-                redirectSignOut: ['http://localhost:3000'],
-                responseType: 'code',
-                providers: ['Google'],
-              },
             },
           },
         },

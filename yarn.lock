@@ -15392,6 +15392,7 @@ __metadata:
     aws-amplify: "npm:^6.16.0"
     aws-cdk-lib: "npm:^2.236.0"
     constructs: "npm:^10.4.5"
+    esbuild: "npm:^0.27.2"
     eslint: "npm:^9.39.2"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.5"

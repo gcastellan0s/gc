@@ -11,8 +11,6 @@ export interface AuthTokens {
   refreshToken: string;
 }
 
-export type AuthProvider = 'email' | 'google';
-
 export interface LoginCredentials {
   email: string;
   password: string;
