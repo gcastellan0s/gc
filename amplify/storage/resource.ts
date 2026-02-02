@@ -3,15 +3,15 @@ import { defineStorage } from '@aws-amplify/backend';
 export const storage = defineStorage({
   name: 'gc-uploads',
   access: (allow) => ({
-    'users/{entity_id}/avatars/*': [
+    'avatars/{entity_id}/*': [
       allow.entity('identity').to(['read', 'write', 'delete']),
       allow.authenticated.to(['read']),
     ],
-    'users/{entity_id}/documents/*': [
+    'documents/{entity_id}/*': [
       allow.entity('identity').to(['read', 'write', 'delete']),
     ],
-    'tmp/*': [
-      allow.authenticated.to(['read', 'write']),
+    'tmp/{entity_id}/*': [
+      allow.entity('identity').to(['read', 'write']),
     ],
   }),
   isDefault: true,
